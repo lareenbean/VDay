@@ -73,7 +73,7 @@ prizeBtn.addEventListener("click", () => {
 
 /* Function to show YAY sequence */
 function showYaySequence() {
-    question.innerText = "YAYYYY 💜🥰";
+    question.innerText = "YAYYYY YOU SAID YES! 💜🥰";
     gif.src = "happy.gif";
 
     // Hide all buttons and text
