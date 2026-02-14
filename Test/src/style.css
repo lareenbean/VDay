@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: Arial, sans-serif;
+    background: pink;
+}
+
+/* Card */
+#card {
+    margin-top: 40px;
+    width: 300px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+#gif {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* ❤️ ORIGINAL WORKING HEARTS */
+.hearts {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.heart {
+    position: absolute;
+    bottom: 0;
+    font-size: 24px;
+    animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+/* Utility */
+.hidden {
+    display: none;
+}
+
+/* 💌 Letter */
+.letter {
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff0f6;
+    border-radius: 15px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
